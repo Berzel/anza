@@ -1,0 +1,99 @@
+.nav {
+  padding: 1em;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+
+  &--primary {
+    color: var(--light-text);
+    background-color: var(--primary);
+  }
+
+  &--secondary {
+    color: var(--light-text);
+    background-color: var(--secondary);
+  }
+
+  &-toggle {
+    width: 2em;
+    border: none;
+    background: none;
+    overflow: hidden;
+    text-indent: 20em;
+    position: relative;
+    white-space: nowrap;
+    border-radius: 0.2em;
+    transform: scale(1.8);
+    color: var(--light-text);
+
+    &:hover {
+      border: none;
+      cursor: pointer;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '≡';
+      display: flex;
+      position: absolute;
+      align-items: center;
+      text-indent: initial;
+      transform: scale(1.2);
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 48em) {
+      display: none;
+    }
+  }
+
+  &__links {
+    top: 0.5em;
+    right: 0.5em;
+    display: none;
+    position: absolute;
+    border-radius: 0.2em;
+    list-style-type: none;
+    background-color: var(--light-text);
+
+    @media screen and (min-width: 48em) {
+      display: block;
+      position: relative;
+      top: 0;
+      right: 0;
+      display: flex;
+      background: none;
+    }
+
+    & a {
+      padding: 0.3em 2.5em 0.3em 0.5em;
+      display: inline-block;
+      color: var(--dark-text);
+
+      @media screen and (min-width: 48em) {
+        color: var(--light-text);
+      padding: 0.3em 1em;
+
+        &:hover {
+          color: var(--secondary);
+        }
+      }
+    }
+
+    &.open {
+      display: block;
+    }
+  }
+}
+
+.logo {
+  color: var(--light-text);
+
+  &:hover {
+    color: var(--light-text);
+  }
+}

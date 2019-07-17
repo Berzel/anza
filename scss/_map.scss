@@ -1,0 +1,12 @@
+.map {
+  min-height: 15em;
+  background-color: var(--primary);
+  background-image: url('./../images/map.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 48em) {
+    min-height: 25em;
+  }
+}

@@ -1,0 +1,26 @@
+.contact {
+  line-height: 1.9;
+  color: var(--light-text);
+  text-align: center;
+
+  @media screen and (min-width: 48em) {
+    display: flex;
+  }
+
+  & > * {
+    padding: 5em;
+    flex: 1 1 0%;
+  }
+
+  &__email {
+    background-color: var(--primary-light);
+  }
+
+  &__address {
+    background-color: var(--primary);
+  }
+
+  &__phone {
+    background-color: var(--primary-dark);
+  }
+}

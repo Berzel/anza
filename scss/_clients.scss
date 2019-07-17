@@ -1,0 +1,20 @@
+.clients {
+  background-color: var(--gray-9);
+  padding: 3em;
+  list-style-type: none;
+
+  @media screen and (min-width: 48em) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.client {
+  text-align: center;
+  padding: 1em 0;
+
+  @media screen and (min-width: 48em) {
+    padding: 0 3em;
+  }
+}

@@ -1,0 +1,125 @@
+:root {
+  --primary-light: hsl(36, 90%, 60%);
+  --primary: hsl(36, 90%, 50%);
+  --primary-dark: hsl(36, 90%, 40%);
+
+  --secondary-light: hsl(197, 90%, 60%);
+  --secondary: hsl(197, 90%, 50%);
+  --secondary-dark: hsl(197, 90%, 40%);
+
+  --light-text: hsl(0, 0%, 100%);
+  --dark-text: hsl(0, 0%, 40%);
+
+  --gray-1: hsl(0, 0%, 50%);
+  --gray-2: hsl(0, 0%, 55%);
+  --gray-3: hsl(0, 0%, 60%);
+  --gray-4: hsl(0, 0%, 65%);
+  --gray-5: hsl(0, 0%, 70%);
+  --gray-6: hsl(0, 0%, 75%);
+  --gray-7: hsl(0, 0%, 80%);
+  --gray-8: hsl(0, 0%, 85%);
+  --gray-9: hsl(0, 0%, 90%);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.01rem;
+  font-weight: 100;
+  font-size: calc(2vw + 0.4em);
+  line-height: 1.4;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 28em) {
+    font-size: calc(1vw + 0.45em);
+  }
+
+  @media screen and (min-width: 48em) {
+    font-size: calc(0.75vw + 0.4em);
+  }
+
+  @media screen and (min-width: 64em) {
+    font-size: calc(0.9em);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2, h3 {
+  font-weight: 500;
+}
+
+h4, h5 {
+  font-weight: 700;
+}
+
+h6 {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+button {
+  outline: 0;
+}
+
+.light-text {
+  color: var(--light-text);
+}
+
+.dark-text {
+  color: var(--dark-text);
+}
+
+.secondary-text {
+  color: var(--secondary);
+}
+
+.primary-text {
+  color: var(--primary);
+}
+
+.green-text {
+  color: green;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 160em;
+}
+
+@import "btn";
+@import "nav";
+@import "banner";
+@import "slider";
+@import "service";
+@import "summary";
+@import "achievement";
+@import "section-title";
+@import "team";
+@import "clients";
+@import "contact";
+@import "footer";
+@import "designer";
+@import "post";
+@import "projects";
+@import "portfolio";
+@import "map";

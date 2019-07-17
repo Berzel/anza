@@ -1,0 +1,29 @@
+.posts {  
+  & > * + * {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.4);
+  }
+}
+
+.post {
+  display: flex;
+  padding: 1.5em 0;
+  align-items: center;
+
+  &__img {
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  &__body {
+    padding-left: 1em;
+    line-height: 1.8;
+
+    & a {
+      color: var(--light-text);
+    }
+  }
+
+  &__author {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,35 @@
+.services {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 28em) {
+    padding: 2em;
+  }
+
+  @media screen and (min-width: 48em) {
+    flex-direction: row;
+    padding: 5em 3em;
+
+    & > * {
+      flex: 1 1 33.3333%;
+    }
+  }
+}
+
+.service {
+  display: flex;
+  padding: 1.5em;
+  border-left: 1px solid var(--gray-7);
+
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__desc {
+    padding-left: 1.5em;
+
+    & * + * {
+      margin-top: 1em;
+    }
+  }
+}
