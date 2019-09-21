@@ -43,8 +43,16 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     justify-content: space-between; 
-    background-color: var(--primary);
-    background-image: linear-gradient(to right, hsla(36, 90%, 50%, 0.9) 55%, hsla(36, 90%, 50%, 0.1)), url('./../images/portfolio/bg.jpg');
+
+    &--primary {
+      background-color: var(--primary);
+      background-image: linear-gradient(to right, hsla(36, 90%, 50%, 0.9) 55%, hsla(36, 90%, 50%, 0.1)), url('./../images/portfolio/bg.jpg');
+    }
+
+    &--secondary {
+      background-color: var(--secondary);
+      background-image: linear-gradient(to right, hsl(197, 90%, 50%, 0.9) 55%, hsla(36, 90%, 50%, 0.1)), url('./../images/portfolio/bg.jpg');
+    }
 
     @media screen and (min-width: 48em) {
       padding: 2em;
