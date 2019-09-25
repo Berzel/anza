@@ -1,0 +1,21 @@
+{
+  "short_name": "AnzaEquip",
+  "name": "AnzaEquip",
+  "icons": [
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "http://anzaequip.co.zw/",
+  "background_color": "#0db1f2",
+  "display": "standalone",
+  "scope": "http://anzaequip.co.zw/",
+  "theme_color": "#0db1f2"
+}

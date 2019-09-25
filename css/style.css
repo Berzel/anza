@@ -23,6 +23,7 @@
   font-size: calc(2vw + 0.4em);
   line-height: 1.4;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 @media screen and (min-width: 28em) {
   :root {
@@ -702,6 +703,7 @@ button {
 .portfolio__item {
   display: flex;
   max-height: 20em;
+  position: relative;
 }
 @media screen and (min-width: 28em) {
   .portfolio__item {
@@ -713,13 +715,38 @@ button {
     flex: 1 1 25%;
   }
 }
-.portfolio__item img {
+.portfolio__item__img {
   flex: 1 1 0%;
 }
 @media screen and (min-width: 28em) {
-  .portfolio__item img {
+  .portfolio__item__img {
     max-height: 1 1 50%;
   }
+}
+.portfolio__item__description {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  display: flex;
+  position: absolute;
+  color: transparent;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.portfolio__item__description * {
+  display: none;
+}
+.portfolio__item__description:hover {
+  color: var(--light-text);
+  background-color: rgba(13, 177, 242, 0.7);
+}
+.portfolio__item__description:hover * {
+  display: block;
 }
 .portfolio__more {
   padding: 1em;
